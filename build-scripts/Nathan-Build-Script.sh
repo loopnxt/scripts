@@ -78,17 +78,17 @@ LOG=${4}
 # OURDIR: The directory that holds the completed DU zip directly after compilation (automatically <sourcedirectory>/out/target/product/<device>, don't change this)
 # DESTDIR: The directory that will hold your completed DU zip files for ease of access (for example, /home/<username>/completed_zips, this must be changed)
 # ZIPFORMAT: The wildcard format of the zip in the out directory to move to the DESTDIR (don't change this)
-SOURCEDIR=???
+SOURCEDIR=/home/aashish/du
 LOGDIR=$( dirname ${SOURCEDIR} )/build-logs
 OUTDIR=${SOURCEDIR}/out/target/product/${DEVICE}
-DESTDIR=???
+DESTDIR=/home/aashish/du/dest
 ZIPFORMAT=DU_${DEVICE}_*.zip
 
 
 # EDIT OPTION
 # KBUILD_BUILD_HOST section: Add text after the equals sign if you want a custom user@host in the kernel version
-export KBUILD_BUILD_USER=
-export KBUILD_BUILD_HOST=
+export KBUILD_BUILD_USER=DroidThug
+export KBUILD_BUILD_HOST=IDGAF
 
 
 # EDIT OPTION
